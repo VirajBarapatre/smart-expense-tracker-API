@@ -1,4 +1,4 @@
-# Smart Expense Tracker API
+﻿# Smart Expense Tracker API\n\n![Python Tests](https://github.com/VirajBarapatre/smart-expense-tracker-API/actions/workflows/python-tests.yml/badge.svg?branch=master)
 
 A lightweight REST API built with **Python** and **FastAPI** for managing personal expenses. The API allows users to create, view, filter, summarize, and delete expenses while storing data locally in a JSON file.
 
@@ -34,20 +34,20 @@ A lightweight REST API built with **Python** and **FastAPI** for managing person
 
 ```text
 smart-expense-tracker/
-│
-├── README.md
-├── AI_NOTES.md
-├── requirements.txt
-│
-├── src/
-│   ├── __init__.py
-│   ├── main.py
-│   ├── models.py
-│   └── storage.py
-│
-└── tests/
-    ├── __init__.py
-    └── test_api.py
+â”‚
+â”œâ”€â”€ README.md
+â”œâ”€â”€ AI_NOTES.md
+â”œâ”€â”€ requirements.txt
+â”‚
+â”œâ”€â”€ src/
+â”‚   â”œâ”€â”€ __init__.py
+â”‚   â”œâ”€â”€ main.py
+â”‚   â”œâ”€â”€ models.py
+â”‚   â””â”€â”€ storage.py
+â”‚
+â””â”€â”€ tests/
+    â”œâ”€â”€ __init__.py
+    â””â”€â”€ test_api.py
 ```
 
 ---
