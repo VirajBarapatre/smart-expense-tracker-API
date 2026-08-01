@@ -1,56 +1,32 @@
-﻿# Smart Expense Tracker API\n\n![Python Tests](https://github.com/VirajBarapatre/smart-expense-tracker-API/actions/workflows/python-tests.yml/badge.svg?branch=master)
+﻿# Smart Expense Tracker API
 
-A lightweight REST API built with **Python** and **FastAPI** for managing personal expenses. The API allows users to create, view, filter, summarize, and delete expenses while storing data locally in a JSON file.
-
----
+A lightweight REST API built with Python and FastAPI to manage personal expenses, perform category filtering, and compute real-time expense aggregations.
 
 ## Features
 
-- Add new expenses with automatic UUID generation
-- View all recorded expenses
-- Filter expenses by category
-- Delete expenses by ID
-- Generate expense summaries
-  - Total spending
-  - Category-wise totals
-  - Monthly spending (`YYYY-MM`)
-- Input validation using Pydantic
-- Automatic interactive API documentation
-- Local JSON data persistence
+- **Expense Management:** Add, view, filter, and delete personal expenses with UUID identification.
+- **Data Validation:** Enforces positive monetary amounts, valid calendar dates, and required string constraints.
+- **Aggregations & Summaries:** Calculates total expense amounts, per-category subtotals, and monthly breakdowns (`YYYY-MM`).
+- **Interactive Documentation:** Built-in OpenAPI / Swagger UI support at `/docs`.
+- **JSON Persistence:** Persists data locally to `expenses.json` across server restarts.
 
 ---
 
-## Tech Stack
-
-- Python 3.9+
-- FastAPI
-- Pydantic
-- Uvicorn
-- Pytest
-
----
-
-## Project Structure
+## Directory Structure
 
 ```text
 smart-expense-tracker/
-â”‚
-â”œâ”€â”€ README.md
-â”œâ”€â”€ AI_NOTES.md
-â”œâ”€â”€ requirements.txt
-â”‚
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ __init__.py
-â”‚   â”œâ”€â”€ main.py
-â”‚   â”œâ”€â”€ models.py
-â”‚   â””â”€â”€ storage.py
-â”‚
-â””â”€â”€ tests/
-    â”œâ”€â”€ __init__.py
-    â””â”€â”€ test_api.py
-```
-
----
+├── README.md          # Project overview, installation, and usage
+├── AI_NOTES.md         # AI collaboration and engineering decisions
+├── requirements.txt    # Project dependencies
+├── src/
+│   ├── __init__.py     # Package initializer
+│   ├── main.py         # FastAPI route handlers & app initialization
+│   ├── models.py       # Pydantic schemas & field validations
+│   └── storage.py      # Persistence and aggregation logic
+└── tests/
+    ├── __init__.py     # Test package initializer
+    └── test_api.py     # Automated API test suite
 
 ## Installation
 
