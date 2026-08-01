@@ -28,6 +28,7 @@ smart-expense-tracker/
     ├── __init__.py     # Test package initializer
     └── test_api.py     # Automated API test suite
 
+```
 ## Installation
 
 ### 1. Clone the repository
