@@ -34,8 +34,8 @@ smart-expense-tracker/
 ### 1. Clone the repository
 
 ```bash
-git clone <your-repository-url>
-cd smart-expense-tracker
+git clone https://github.com/VirajBarapatre/smart-expense-tracker-API.git
+cd smart-expense-tracker-API
 ```
 
 ### 2. Create a virtual environment
